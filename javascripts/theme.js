@@ -28,5 +28,13 @@ $(function(){
       }
     });
     $("#quick-search input#q").attr("placeholder", placeholderText);
+
+    if (controllerName === "controller-account") {
+      $("#new_user").before("<p>このシステムを利用するためのユーザーアカウントを作成します。</p><p>下記項目を入力し送信ボタンをクリックしてください。確認のメールが届くので、メールの内容に従って登録を完了させてください。</p>");
+      $("#new_user #user_login").after("<em class='info'>ログイン時に使用するユーザーID (例: fukuzawa)</em>");
+      $("#new_user #user_password_confirmation").after("<em class='info'>パスワードを再入力してください</em>");
+      $("#new_user #user_firstname").after("<em class='info'>氏名のうち 名 部分 (例: 諭吉)</em>");
+      $("#new_user #user_lastname").after("<em class='info'>氏名のうち 名 部分 (例: 福沢)</em>");
+    }
   }
 });
