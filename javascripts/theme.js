@@ -38,7 +38,7 @@ $(function(){
       $("#new_user #user_login").after("<em class='info'>ログイン時に使用するユーザーID (例: fukuzawa)</em>");
       $("#new_user #user_password_confirmation").after("<em class='info'>パスワードを再入力してください</em>");
       $("#new_user #user_firstname").after("<em class='info'>氏名のうち 名 部分 (例: 諭吉)</em>");
-      $("#new_user #user_lastname").after("<em class='info'>氏名のうち 名 部分 (例: 福沢)</em>");
+      $("#new_user #user_lastname").after("<em class='info'>氏名のうち 姓 部分 (例: 福沢)</em>");
 
       $("#login-form").after("<p style='text-align: center;'>本システムのユーザーアカウントをお持ちで無い方は <a href='account/register/'><strong>登録</strong></a> をお願いします(所要時間 約1分)。</p><p style='text-align: center;'>お問い合わせの送信、対応状況の確認、お問い合わせ履歴の記録・参照 ができるようになります。</p>");
     }
